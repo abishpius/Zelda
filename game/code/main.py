@@ -6,6 +6,7 @@ class Game:
 	def __init__(self):
 
 		# general setup
+		pygame.mixer.init(frequency=44100, size=-16, channels=2, buffer=512)
 		pygame.init()
 		self.screen = pygame.display.set_mode((WIDTH,HEIGTH))
 		pygame.display.set_caption('Zelda')
